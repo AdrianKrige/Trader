@@ -1,0 +1,5 @@
+start = 200000
+with open('test_data/slow-increase.txt', 'a') as file:
+    for i in range(4320):
+        new = start + (i*10)
+        file.write('{},{}\n'.format(new, new+1))
